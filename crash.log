@@ -1,0 +1,1076 @@
+2020/03/12 16:24:29 [INFO] Terraform version: 0.12.23  
+2020/03/12 16:24:29 [INFO] Go runtime version: go1.13.8
+2020/03/12 16:24:29 [INFO] CLI args: []string{"/Users/giulianozorzi/homebrew/bin/terraform", "apply", "--auto-approve"}
+2020/03/12 16:24:29 [DEBUG] Attempting to open CLI config file: /Users/giulianozorzi/.terraformrc
+2020/03/12 16:24:29 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/03/12 16:24:29 [DEBUG] checking for credentials in "/Users/giulianozorzi/.terraform.d/plugins"
+2020/03/12 16:24:29 [DEBUG] checking for credentials in "/Users/giulianozorzi/.terraform.d/plugins/darwin_amd64"
+2020/03/12 16:24:29 [INFO] CLI command args: []string{"apply", "--auto-approve"}
+2020/03/12 16:24:29 [WARN] Invalid log level: "1". Defaulting to level: TRACE. Valid levels are: [TRACE DEBUG INFO WARN ERROR]
+2020/03/12 16:24:29 [TRACE] Meta.Backend: built configuration for "local" backend with hash value 3396623677
+2020/03/12 16:24:29 [TRACE] Preserving existing state lineage "a19c992a-728e-1e48-fb1e-4944bb53c20e"
+2020/03/12 16:24:29 [TRACE] Preserving existing state lineage "a19c992a-728e-1e48-fb1e-4944bb53c20e"
+2020/03/12 16:24:29 [TRACE] Meta.Backend: working directory was previously initialized for "local" backend
+2020/03/12 16:24:29 [TRACE] Meta.Backend: using already-initialized, unchanged "local" backend configuration
+2020/03/12 16:24:29 [TRACE] Meta.Backend: instantiated backend of type *local.Local
+2020/03/12 16:24:29 [DEBUG] checking for provider in "."
+2020/03/12 16:24:29 [DEBUG] checking for provider in "/Users/giulianozorzi/homebrew/bin"
+2020/03/12 16:24:29 [DEBUG] checking for provider in ".terraform/plugins/darwin_amd64"
+2020/03/12 16:24:29 [DEBUG] found provider "terraform-provider-aws_v2.52.0_x4"
+2020/03/12 16:24:29 [DEBUG] checking for provider in "/Users/giulianozorzi/.terraform.d/plugins"
+2020/03/12 16:24:29 [DEBUG] checking for provider in "/Users/giulianozorzi/.terraform.d/plugins/darwin_amd64"
+2020/03/12 16:24:29 [DEBUG] found provider "terraform-provider-circleci_v0.3.0"
+2020/03/12 16:24:29 [DEBUG] found valid plugin: "aws", "2.52.0", "/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4"
+2020/03/12 16:24:29 [DEBUG] found valid plugin: "circleci", "0.3.0", "/Users/giulianozorzi/.terraform.d/plugins/darwin_amd64/terraform-provider-circleci_v0.3.0"
+2020/03/12 16:24:29 [DEBUG] checking for provisioner in "."
+2020/03/12 16:24:29 [DEBUG] checking for provisioner in "/Users/giulianozorzi/homebrew/bin"
+2020/03/12 16:24:29 [DEBUG] checking for provisioner in ".terraform/plugins/darwin_amd64"
+2020/03/12 16:24:29 [DEBUG] checking for provisioner in "/Users/giulianozorzi/.terraform.d/plugins"
+2020/03/12 16:24:29 [DEBUG] checking for provisioner in "/Users/giulianozorzi/.terraform.d/plugins/darwin_amd64"
+2020/03/12 16:24:29 [TRACE] Meta.Backend: backend *local.Local supports operations
+2020/03/12 16:24:29 [INFO] backend/local: starting Apply operation
+2020/03/12 16:24:29 [TRACE] backend/local: requesting state manager for workspace "default"
+2020/03/12 16:24:29 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from ./terraform.tfstate
+ - write new snapshots to ./terraform.tfstate
+ - create any backup at ./terraform.tfstate.backup
+2020/03/12 16:24:29 [TRACE] backend/local: requesting state lock for workspace "default"
+2020/03/12 16:24:29 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at ./terraform.tfstate
+2020/03/12 16:24:29 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2020/03/12 16:24:29 [TRACE] statemgr.Filesystem: locking ./terraform.tfstate using fcntl flock
+2020/03/12 16:24:29 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2020/03/12 16:24:29 [TRACE] backend/local: reading remote state for workspace "default"
+2020/03/12 16:24:29 [TRACE] statemgr.Filesystem: reading latest snapshot from ./terraform.tfstate
+2020/03/12 16:24:29 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2020/03/12 16:24:29 [TRACE] statemgr.Filesystem: read nil snapshot
+2020/03/12 16:24:29 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2020/03/12 16:24:29 [TRACE] backend/local: building context for current working directory
+2020/03/12 16:24:29 [TRACE] terraform.NewContext: starting
+2020/03/12 16:24:29 [TRACE] terraform.NewContext: resolving provider version selections
+2020/03/12 16:24:30 [TRACE] terraform.NewContext: loading provider schemas
+2020/03/12 16:24:30 [TRACE] LoadSchemas: retrieving schema for provider type "aws"
+2020-03-12T16:24:30.249+0900 [INFO]  plugin: configuring client automatic mTLS
+2020-03-12T16:24:30.276+0900 [DEBUG] plugin: starting plugin: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4 args=[/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4]
+2020-03-12T16:24:30.290+0900 [DEBUG] plugin: plugin started: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4 pid=68908
+2020-03-12T16:24:30.290+0900 [DEBUG] plugin: waiting for RPC address: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4
+2020-03-12T16:24:30.322+0900 [INFO]  plugin.terraform-provider-aws_v2.52.0_x4: configuring server automatic mTLS: timestamp=2020-03-12T16:24:30.322+0900
+2020-03-12T16:24:30.366+0900 [DEBUG] plugin: using plugin: version=5
+2020-03-12T16:24:30.366+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: plugin address: address=/var/folders/8f/j9q8k6410375hwnjpc0671qm0000gn/T/plugin078973979 network=unix timestamp=2020-03-12T16:24:30.366+0900
+2020/03/12 16:24:30 [TRACE] GRPCProvider: GetSchema
+2020/03/12 16:24:30 [TRACE] GRPCProvider: Close
+2020-03-12T16:24:30.493+0900 [DEBUG] plugin: plugin process exited: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4 pid=68908
+2020-03-12T16:24:30.493+0900 [DEBUG] plugin: plugin exited
+2020/03/12 16:24:30 [TRACE] terraform.NewContext: complete
+2020/03/12 16:24:30 [TRACE] backend/local: finished building terraform.Context
+2020/03/12 16:24:30 [TRACE] backend/local: requesting interactive input, if necessary
+2020/03/12 16:24:30 [TRACE] Context.Input: Prompting for provider arguments
+2020/03/12 16:24:30 [TRACE] Context.Input: Provider provider.aws declared at provider.tf:1,1-15
+2020/03/12 16:24:30 [TRACE] Context.Input: Input for provider.aws: map[string]cty.Value{}
+2020/03/12 16:24:30 [TRACE] backend/local: running validation operation
+2020/03/12 16:24:30 [INFO] terraform: building graph: GraphTypeValidate
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/03/12 16:24:30 [TRACE] ConfigTransformer: Starting for path: 
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeValidatableResource
+  ------
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/03/12 16:24:30 [TRACE] StateTransformer: state is empty, so nothing to do
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/03/12 16:24:30 [TRACE] AttachResourceConfigTransformer: attaching to "aws_route53_zone.zone" (*terraform.NodeValidatableResource) config from route53.tf:7,1-35
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeValidatableResource
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/03/12 16:24:30 [TRACE] ProviderConfigTransformer: attaching to "provider.aws" provider configuration from provider.tf:1,1-15
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/03/12 16:24:30 [TRACE] ProviderTransformer: aws_route53_zone.zone is provided by provider.aws or inherited equivalent
+2020/03/12 16:24:30 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_route53_zone.zone
+2020/03/12 16:24:30 [DEBUG] ProviderTransformer: "aws_route53_zone.zone" (*terraform.NodeValidatableResource) needs provider.aws
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  aws_route53_zone.zone - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/03/12 16:24:30 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_route53_zone.zone
+2020/03/12 16:24:30 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.aws
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/03/12 16:24:30 [DEBUG] ReferenceTransformer: "aws_route53_zone.zone" references: []
+2020/03/12 16:24:30 [DEBUG] ReferenceTransformer: "var.dns_config" references: []
+2020/03/12 16:24:30 [DEBUG] ReferenceTransformer: "provider.aws" references: []
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_route53_zone.zone - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+    var.dns_config - *terraform.NodeRootVariable
+  provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_route53_zone.zone - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+    var.dns_config - *terraform.NodeRootVariable
+  provider.aws - *terraform.NodeApplyableProvider
+  provider.aws (close) - *terraform.graphNodeCloseProvider
+    aws_route53_zone.zone - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_route53_zone.zone - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+    var.dns_config - *terraform.NodeRootVariable
+  provider.aws - *terraform.NodeApplyableProvider
+  provider.aws (close) - *terraform.graphNodeCloseProvider
+    aws_route53_zone.zone - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.aws (close) - *terraform.graphNodeCloseProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_route53_zone.zone - *terraform.NodeValidatableResource
+    var.dns_config - *terraform.NodeRootVariable
+  provider.aws - *terraform.NodeApplyableProvider
+  provider.aws (close) - *terraform.graphNodeCloseProvider
+    aws_route53_zone.zone - *terraform.NodeValidatableResource
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.aws (close) - *terraform.graphNodeCloseProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [DEBUG] Starting graph walk: walkValidate
+2020/03/12 16:24:30 [TRACE] dag/walk: updating graph
+2020/03/12 16:24:30 [TRACE] dag/walk: added new vertex: "provider.aws"
+2020/03/12 16:24:30 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2020/03/12 16:24:30 [TRACE] dag/walk: added new vertex: "provider.aws (close)"
+2020/03/12 16:24:30 [TRACE] dag/walk: added new vertex: "root"
+2020/03/12 16:24:30 [TRACE] dag/walk: added new vertex: "aws_route53_zone.zone"
+2020/03/12 16:24:30 [TRACE] dag/walk: added new vertex: "var.dns_config"
+2020/03/12 16:24:30 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "aws_route53_zone.zone"
+2020/03/12 16:24:30 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "var.dns_config"
+2020/03/12 16:24:30 [TRACE] dag/walk: added edge: "provider.aws (close)" waiting on "aws_route53_zone.zone"
+2020/03/12 16:24:30 [TRACE] dag/walk: added edge: "root" waiting on "provider.aws (close)"
+2020/03/12 16:24:30 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2020/03/12 16:24:30 [TRACE] dag/walk: added edge: "aws_route53_zone.zone" waiting on "provider.aws"
+2020/03/12 16:24:30 [TRACE] dag/walk: dependencies changed for "provider.aws (close)", sending new deps
+2020/03/12 16:24:30 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2020/03/12 16:24:30 [TRACE] dag/walk: dependencies changed for "aws_route53_zone.zone", sending new deps
+2020/03/12 16:24:30 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2020/03/12 16:24:30 [TRACE] dag/walk: visiting "var.dns_config"
+2020/03/12 16:24:30 [TRACE] vertex "var.dns_config": starting visit (*terraform.NodeRootVariable)
+2020/03/12 16:24:30 [TRACE] dag/walk: visiting "provider.aws"
+2020/03/12 16:24:30 [TRACE] vertex "var.dns_config": evaluating
+2020/03/12 16:24:30 [TRACE] vertex "provider.aws": starting visit (*terraform.NodeApplyableProvider)
+2020/03/12 16:24:30 [TRACE] [walkValidate] Entering eval tree: var.dns_config
+2020/03/12 16:24:30 [TRACE] vertex "provider.aws": evaluating
+2020/03/12 16:24:30 [TRACE] [walkValidate] Entering eval tree: provider.aws
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/03/12 16:24:30 [TRACE] [walkValidate] Exiting eval tree: var.dns_config
+2020/03/12 16:24:30 [TRACE] vertex "var.dns_config": visit complete
+2020-03-12T16:24:30.496+0900 [INFO]  plugin: configuring client automatic mTLS
+2020-03-12T16:24:30.525+0900 [DEBUG] plugin: starting plugin: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4 args=[/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4]
+2020-03-12T16:24:30.538+0900 [DEBUG] plugin: plugin started: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4 pid=68911
+2020-03-12T16:24:30.538+0900 [DEBUG] plugin: waiting for RPC address: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4
+2020-03-12T16:24:30.560+0900 [INFO]  plugin.terraform-provider-aws_v2.52.0_x4: configuring server automatic mTLS: timestamp=2020-03-12T16:24:30.560+0900
+2020-03-12T16:24:30.588+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: plugin address: address=/var/folders/8f/j9q8k6410375hwnjpc0671qm0000gn/T/plugin299558010 network=unix timestamp=2020-03-12T16:24:30.588+0900
+2020-03-12T16:24:30.588+0900 [DEBUG] plugin: using plugin: version=5
+2020/03/12 16:24:30 [TRACE] BuiltinEvalContext: Initialized "aws" provider for provider.aws
+2020/03/12 16:24:30 [TRACE] <root>: eval: terraform.EvalNoop
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalValidateProvider
+2020/03/12 16:24:30 [TRACE] buildProviderConfig for provider.aws: using explicit config only
+2020/03/12 16:24:30 [TRACE] GRPCProvider: GetSchema
+2020/03/12 16:24:30 [TRACE] GRPCProvider: PrepareProviderConfig
+2020/03/12 16:24:30 [TRACE] <root>: eval: terraform.EvalNoop
+2020/03/12 16:24:30 [TRACE] <root>: eval: terraform.EvalNoop
+2020/03/12 16:24:30 [TRACE] [walkValidate] Exiting eval tree: provider.aws
+2020/03/12 16:24:30 [TRACE] vertex "provider.aws": visit complete
+2020/03/12 16:24:30 [TRACE] dag/walk: visiting "aws_route53_zone.zone"
+2020/03/12 16:24:30 [TRACE] vertex "aws_route53_zone.zone": starting visit (*terraform.NodeValidatableResource)
+2020/03/12 16:24:30 [TRACE] vertex "aws_route53_zone.zone": evaluating
+2020/03/12 16:24:30 [TRACE] [walkValidate] Entering eval tree: aws_route53_zone.zone
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalValidateResource
+2020/03/12 16:24:30 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2020/03/12 16:24:30 [TRACE] [walkValidate] Exiting eval tree: aws_route53_zone.zone
+2020/03/12 16:24:30 [TRACE] vertex "aws_route53_zone.zone": visit complete
+2020/03/12 16:24:30 [TRACE] dag/walk: visiting "provider.aws (close)"
+2020/03/12 16:24:30 [TRACE] vertex "provider.aws (close)": starting visit (*terraform.graphNodeCloseProvider)
+2020/03/12 16:24:30 [TRACE] vertex "provider.aws (close)": evaluating
+2020/03/12 16:24:30 [TRACE] [walkValidate] Entering eval tree: provider.aws (close)
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalCloseProvider
+2020/03/12 16:24:30 [TRACE] GRPCProvider: Close
+2020/03/12 16:24:30 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
+2020/03/12 16:24:30 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2020/03/12 16:24:30 [TRACE] vertex "meta.count-boundary (EachMode fixup)": evaluating
+2020/03/12 16:24:30 [TRACE] [walkValidate] Entering eval tree: meta.count-boundary (EachMode fixup)
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
+2020/03/12 16:24:30 [TRACE] [walkValidate] Exiting eval tree: meta.count-boundary (EachMode fixup)
+2020/03/12 16:24:30 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2020-03-12T16:24:30.749+0900 [DEBUG] plugin: plugin process exited: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4 pid=68911
+2020-03-12T16:24:30.749+0900 [DEBUG] plugin: plugin exited
+2020/03/12 16:24:30 [TRACE] [walkValidate] Exiting eval tree: provider.aws (close)
+2020/03/12 16:24:30 [TRACE] vertex "provider.aws (close)": visit complete
+2020/03/12 16:24:30 [TRACE] dag/walk: visiting "root"
+2020/03/12 16:24:30 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2020/03/12 16:24:30 [TRACE] vertex "root": visit complete
+2020/03/12 16:24:30 [INFO] backend/local: apply calling Refresh
+2020/03/12 16:24:30 [INFO] terraform: building graph: GraphTypeRefresh
+2020/03/12 16:24:30 [TRACE] No managed resources in state during refresh; skipping managed resource transformer
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/03/12 16:24:30 [TRACE] ConfigTransformer: Starting for path: 
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/03/12 16:24:30 [TRACE] StateTransformer: state is empty, so nothing to do
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/03/12 16:24:30 [TRACE] ProviderConfigTransformer: attaching to "provider.aws" provider configuration from provider.tf:1,1-15
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/03/12 16:24:30 [DEBUG] pruning unused provider.aws
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer with new graph:
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/03/12 16:24:30 [DEBUG] ReferenceTransformer: "var.dns_config" references: []
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2020/03/12 16:24:30 [DEBUG] Starting graph walk: walkRefresh
+2020/03/12 16:24:30 [TRACE] dag/walk: updating graph
+2020/03/12 16:24:30 [TRACE] dag/walk: added new vertex: "var.dns_config"
+2020/03/12 16:24:30 [TRACE] dag/walk: visiting "var.dns_config"
+2020/03/12 16:24:30 [TRACE] vertex "var.dns_config": starting visit (*terraform.NodeRootVariable)
+2020/03/12 16:24:30 [TRACE] vertex "var.dns_config": evaluating
+2020/03/12 16:24:30 [TRACE] [walkRefresh] Entering eval tree: var.dns_config
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/03/12 16:24:30 [TRACE] [walkRefresh] Exiting eval tree: var.dns_config
+2020/03/12 16:24:30 [TRACE] vertex "var.dns_config": visit complete
+2020/03/12 16:24:30 [INFO] backend/local: apply calling Plan
+2020/03/12 16:24:30 [INFO] terraform: building graph: GraphTypePlan
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/03/12 16:24:30 [TRACE] ConfigTransformer: Starting for path: 
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodePlannableResource
+  ------
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/03/12 16:24:30 [TRACE] StateTransformer: state is empty, so nothing to do
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/03/12 16:24:30 [TRACE] AttachResourceConfigTransformer: attaching to "aws_route53_zone.zone" (*terraform.NodePlannableResource) config from route53.tf:7,1-35
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodePlannableResource
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/03/12 16:24:30 [TRACE] ProviderConfigTransformer: attaching to "provider.aws" provider configuration from provider.tf:1,1-15
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodePlannableResource
+  provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/03/12 16:24:30 [TRACE] ProviderTransformer: aws_route53_zone.zone is provided by provider.aws or inherited equivalent
+2020/03/12 16:24:30 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_route53_zone.zone
+2020/03/12 16:24:30 [DEBUG] ProviderTransformer: "aws_route53_zone.zone" (*terraform.NodePlannableResource) needs provider.aws
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodePlannableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/03/12 16:24:30 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  aws_route53_zone.zone - *terraform.NodePlannableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/03/12 16:24:30 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_route53_zone.zone
+2020/03/12 16:24:30 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.aws
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/03/12 16:24:30 [DEBUG] ReferenceTransformer: "var.dns_config" references: []
+2020/03/12 16:24:30 [DEBUG] ReferenceTransformer: "provider.aws" references: []
+2020/03/12 16:24:30 [DEBUG] ReferenceTransformer: "aws_route53_zone.zone" references: []
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodePlannableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_route53_zone.zone - *terraform.NodePlannableResource
+    provider.aws - *terraform.NodeApplyableProvider
+    var.dns_config - *terraform.NodeRootVariable
+  provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2020/03/12 16:24:30 [TRACE] ForcedCBDTransformer: "aws_route53_zone.zone" (*terraform.NodePlannableResource) has no CBD descendent, so skipping
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodePlannableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_route53_zone.zone - *terraform.NodePlannableResource
+    provider.aws - *terraform.NodeApplyableProvider
+    var.dns_config - *terraform.NodeRootVariable
+  provider.aws - *terraform.NodeApplyableProvider
+  provider.aws (close) - *terraform.graphNodeCloseProvider
+    aws_route53_zone.zone - *terraform.NodePlannableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodePlannableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_route53_zone.zone - *terraform.NodePlannableResource
+    provider.aws - *terraform.NodeApplyableProvider
+    var.dns_config - *terraform.NodeRootVariable
+  provider.aws - *terraform.NodeApplyableProvider
+  provider.aws (close) - *terraform.graphNodeCloseProvider
+    aws_route53_zone.zone - *terraform.NodePlannableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.aws (close) - *terraform.graphNodeCloseProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodePlannableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_route53_zone.zone - *terraform.NodePlannableResource
+    var.dns_config - *terraform.NodeRootVariable
+  provider.aws - *terraform.NodeApplyableProvider
+  provider.aws (close) - *terraform.graphNodeCloseProvider
+    aws_route53_zone.zone - *terraform.NodePlannableResource
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.aws (close) - *terraform.graphNodeCloseProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:30 [DEBUG] Starting graph walk: walkPlan
+2020/03/12 16:24:30 [TRACE] dag/walk: updating graph
+2020/03/12 16:24:30 [TRACE] dag/walk: added new vertex: "root"
+2020/03/12 16:24:30 [TRACE] dag/walk: added new vertex: "aws_route53_zone.zone"
+2020/03/12 16:24:30 [TRACE] dag/walk: added new vertex: "var.dns_config"
+2020/03/12 16:24:30 [TRACE] dag/walk: added new vertex: "provider.aws"
+2020/03/12 16:24:30 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2020/03/12 16:24:30 [TRACE] dag/walk: added new vertex: "provider.aws (close)"
+2020/03/12 16:24:30 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "aws_route53_zone.zone"
+2020/03/12 16:24:30 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "var.dns_config"
+2020/03/12 16:24:30 [TRACE] dag/walk: added edge: "provider.aws (close)" waiting on "aws_route53_zone.zone"
+2020/03/12 16:24:30 [TRACE] dag/walk: added edge: "root" waiting on "provider.aws (close)"
+2020/03/12 16:24:30 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2020/03/12 16:24:30 [TRACE] dag/walk: added edge: "aws_route53_zone.zone" waiting on "provider.aws"
+2020/03/12 16:24:30 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2020/03/12 16:24:30 [TRACE] dag/walk: dependencies changed for "provider.aws (close)", sending new deps
+2020/03/12 16:24:30 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2020/03/12 16:24:30 [TRACE] dag/walk: dependencies changed for "aws_route53_zone.zone", sending new deps
+2020/03/12 16:24:30 [TRACE] dag/walk: visiting "provider.aws"
+2020/03/12 16:24:30 [TRACE] vertex "provider.aws": starting visit (*terraform.NodeApplyableProvider)
+2020/03/12 16:24:30 [TRACE] vertex "provider.aws": evaluating
+2020/03/12 16:24:30 [TRACE] [walkPlan] Entering eval tree: provider.aws
+2020/03/12 16:24:30 [TRACE] dag/walk: visiting "var.dns_config"
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020/03/12 16:24:30 [TRACE] vertex "var.dns_config": starting visit (*terraform.NodeRootVariable)
+2020/03/12 16:24:30 [TRACE] vertex "var.dns_config": evaluating
+2020/03/12 16:24:30 [TRACE] [walkPlan] Entering eval tree: var.dns_config
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/03/12 16:24:30 [TRACE] [walkPlan] Exiting eval tree: var.dns_config
+2020-03-12T16:24:30.751+0900 [INFO]  plugin: configuring client automatic mTLS
+2020/03/12 16:24:30 [TRACE] vertex "var.dns_config": visit complete
+2020-03-12T16:24:30.779+0900 [DEBUG] plugin: starting plugin: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4 args=[/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4]
+2020-03-12T16:24:30.793+0900 [DEBUG] plugin: plugin started: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4 pid=68913
+2020-03-12T16:24:30.793+0900 [DEBUG] plugin: waiting for RPC address: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4
+2020-03-12T16:24:30.815+0900 [INFO]  plugin.terraform-provider-aws_v2.52.0_x4: configuring server automatic mTLS: timestamp=2020-03-12T16:24:30.815+0900
+2020-03-12T16:24:30.844+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: plugin address: address=/var/folders/8f/j9q8k6410375hwnjpc0671qm0000gn/T/plugin679225116 network=unix timestamp=2020-03-12T16:24:30.844+0900
+2020-03-12T16:24:30.844+0900 [DEBUG] plugin: using plugin: version=5
+2020/03/12 16:24:30 [TRACE] BuiltinEvalContext: Initialized "aws" provider for provider.aws
+2020/03/12 16:24:30 [TRACE] <root>: eval: terraform.EvalNoop
+2020/03/12 16:24:30 [TRACE] <root>: eval: terraform.EvalNoop
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalConfigProvider
+2020/03/12 16:24:30 [TRACE] buildProviderConfig for provider.aws: using explicit config only
+2020/03/12 16:24:30 [TRACE] GRPCProvider: GetSchema
+2020/03/12 16:24:30 [TRACE] GRPCProvider: Configure
+2020-03-12T16:24:30.951+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:30 [INFO] No assume_role block read from configuration
+2020-03-12T16:24:30.957+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:30 [INFO] Building AWS auth structure
+2020-03-12T16:24:30.957+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:30 [WARN] Invalid log level: "1". Defaulting to level: TRACE. Valid levels are: [TRACE DEBUG INFO WARN ERROR]
+2020-03-12T16:24:30.957+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:30 [INFO] Setting AWS metadata API timeout to 100ms
+2020-03-12T16:24:30.957+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:30 [INFO] AWS Auth provider used: "StaticProvider"
+2020-03-12T16:24:30.963+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:30 [WARN] AWS account ID not found for provider. See https://www.terraform.io/docs/providers/aws/index.html#skip_requesting_account_id for implications.
+2020-03-12T16:24:30.965+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:30 [DEBUG] [aws-sdk-go] DEBUG: Request ec2/DescribeAccountAttributes Details:
+2020-03-12T16:24:30.965+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
+2020-03-12T16:24:30.965+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: POST / HTTP/1.1
+2020-03-12T16:24:30.965+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Host: localhost:4597
+2020-03-12T16:24:30.965+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: User-Agent: aws-sdk-go/1.29.18 (go1.13.7; darwin; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.23 (+https://www.terraform.io)
+2020-03-12T16:24:30.965+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Content-Length: 87
+2020-03-12T16:24:30.965+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=mock_access_key/20200312/ap-northeast-1/ec2/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date, Signature=794727d9e02f4800751a77620b6eb22f08201614f95a451396156afe0568a89d
+2020-03-12T16:24:30.965+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Content-Type: application/x-www-form-urlencoded; charset=utf-8
+2020-03-12T16:24:30.965+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: X-Amz-Date: 20200312T072430Z
+2020-03-12T16:24:30.965+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Accept-Encoding: gzip
+2020-03-12T16:24:30.965+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 
+2020-03-12T16:24:30.965+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Action=DescribeAccountAttributes&AttributeName.1=supported-platforms&Version=2016-11-15
+2020-03-12T16:24:30.965+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: -----------------------------------------------------
+2020-03-12T16:24:30.996+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:30 [DEBUG] [aws-sdk-go] DEBUG: Response ec2/DescribeAccountAttributes Details:
+2020-03-12T16:24:30.996+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: ---[ RESPONSE ]--------------------------------------
+2020-03-12T16:24:30.996+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: HTTP/1.1 200 OK
+2020-03-12T16:24:30.996+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Content-Length: 1170
+2020-03-12T16:24:30.996+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Access-Control-Allow-Headers: authorization,content-type,content-md5,cache-control,x-amz-content-sha256,x-amz-date,x-amz-security-token,x-amz-user-agent,x-amz-target,x-amz-acl,x-amz-version-id,x-localstack-target,x-amz-tagging
+2020-03-12T16:24:30.996+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Access-Control-Allow-Methods: HEAD,GET,PUT,POST,DELETE,OPTIONS,PATCH
+2020-03-12T16:24:30.996+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Access-Control-Allow-Origin: *
+2020-03-12T16:24:30.996+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Access-Control-Expose-Headers: x-amz-version-id
+2020-03-12T16:24:30.996+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Content-Type: text/html; charset=utf-8
+2020-03-12T16:24:30.996+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Date: Thu, 12 Mar 2020 07:24:30 GMT
+2020-03-12T16:24:30.996+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Server: BaseHTTP/0.6 Python/3.8.2
+2020-03-12T16:24:30.996+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 
+2020-03-12T16:24:30.996+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 
+2020-03-12T16:24:30.996+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: -----------------------------------------------------
+2020-03-12T16:24:30.996+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:30 [DEBUG] [aws-sdk-go] <DescribeAccountAttributesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/"><requestId>7a62c49f-347e-4fc4-9331-6e8eEXAMPLE</requestId><accountAttributeSet><item><attributeName>vpc-max-security-groups-per-interface</attributeName><attributeValueSet><item><attributeValue>5</attributeValue></item></attributeValueSet></item><item><attributeName>max-instances</attributeName><attributeValueSet><item><attributeValue>20</attributeValue></item></attributeValueSet></item><item><attributeName>supported-platforms</attributeName><attributeValueSet><item><attributeValue>EC2</attributeValue></item><item><attributeValue>VPC</attributeValue></item></attributeValueSet></item><item><attributeName>default-vpc</attributeName><attributeValueSet><item><attributeValue>none</attributeValue></item></attributeValueSet></item><item><attributeName>max-elastic-ips</attributeName><attributeValueSet><item><attributeValue>5</attributeValue></item></attributeValueSet></item><item><attributeName>vpc-max-elastic-ips</attributeName><attributeValueSet><item><attributeValue>5</attributeValue></item></attributeValueSet></item></accountAttributeSet></DescribeAccountAttributesResponse>
+2020/03/12 16:24:30 [TRACE] [walkPlan] Exiting eval tree: provider.aws
+2020/03/12 16:24:30 [TRACE] vertex "provider.aws": visit complete
+2020/03/12 16:24:30 [TRACE] dag/walk: visiting "aws_route53_zone.zone"
+2020/03/12 16:24:30 [TRACE] vertex "aws_route53_zone.zone": starting visit (*terraform.NodePlannableResource)
+2020/03/12 16:24:30 [TRACE] vertex "aws_route53_zone.zone": evaluating
+2020/03/12 16:24:30 [TRACE] [walkPlan] Entering eval tree: aws_route53_zone.zone
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalWriteResourceState
+2020/03/12 16:24:30 [TRACE] [walkPlan] Exiting eval tree: aws_route53_zone.zone
+2020/03/12 16:24:30 [TRACE] vertex "aws_route53_zone.zone": expanding dynamic subgraph
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodePlannableResourceInstance
+  ------
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.OrphanResourceCountTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.OrphanResourceCountTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/03/12 16:24:30 [DEBUG] Resource instance state not found for node "aws_route53_zone.zone", instance aws_route53_zone.zone
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/03/12 16:24:30 [DEBUG] ReferenceTransformer: "aws_route53_zone.zone" references: []
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/03/12 16:24:30 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2020/03/12 16:24:30 [TRACE] vertex "aws_route53_zone.zone": entering dynamic subgraph
+2020/03/12 16:24:30 [TRACE] dag/walk: updating graph
+2020/03/12 16:24:30 [TRACE] dag/walk: added new vertex: "aws_route53_zone.zone"
+2020/03/12 16:24:30 [TRACE] dag/walk: visiting "aws_route53_zone.zone"
+2020/03/12 16:24:30 [TRACE] vertex "aws_route53_zone.zone": starting visit (*terraform.NodePlannableResourceInstance)
+2020/03/12 16:24:30 [TRACE] vertex "aws_route53_zone.zone": evaluating
+2020/03/12 16:24:30 [TRACE] [walkPlan] Entering eval tree: aws_route53_zone.zone
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalReadState
+2020/03/12 16:24:30 [TRACE] EvalReadState: reading state for aws_route53_zone.zone
+2020/03/12 16:24:30 [TRACE] EvalReadState: no state present for aws_route53_zone.zone
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalValidateSelfRef
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalDiff
+2020/03/12 16:24:30 [TRACE] Re-validating config for "aws_route53_zone.zone"
+2020/03/12 16:24:30 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2020/03/12 16:24:30 [TRACE] GRPCProvider: PlanResourceChange
+2020/03/12 16:24:30 [WARN] Provider "registry.terraform.io/-/aws" produced an invalid plan for aws_route53_zone.zone, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .comment: planned value cty.StringVal("Managed by Terraform") does not match config value cty.NullVal(cty.String)
+      - .force_destroy: planned value cty.False does not match config value cty.NullVal(cty.Bool)
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalCheckPreventDestroy
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalWriteState
+2020/03/12 16:24:30 [TRACE] EvalWriteState: writing current state object for aws_route53_zone.zone
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalWriteDiff
+2020/03/12 16:24:30 [TRACE] EvalWriteDiff: recorded Create change for aws_route53_zone.zone
+2020/03/12 16:24:30 [TRACE] [walkPlan] Exiting eval tree: aws_route53_zone.zone
+2020/03/12 16:24:30 [TRACE] vertex "aws_route53_zone.zone": visit complete
+2020/03/12 16:24:30 [TRACE] vertex "aws_route53_zone.zone": dynamic subgraph completed successfully
+2020/03/12 16:24:30 [TRACE] vertex "aws_route53_zone.zone": visit complete
+2020/03/12 16:24:30 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
+2020/03/12 16:24:30 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2020/03/12 16:24:30 [TRACE] vertex "meta.count-boundary (EachMode fixup)": evaluating
+2020/03/12 16:24:30 [TRACE] [walkPlan] Entering eval tree: meta.count-boundary (EachMode fixup)
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
+2020/03/12 16:24:30 [TRACE] dag/walk: visiting "provider.aws (close)"
+2020/03/12 16:24:30 [TRACE] vertex "provider.aws (close)": starting visit (*terraform.graphNodeCloseProvider)
+2020/03/12 16:24:30 [TRACE] [walkPlan] Exiting eval tree: meta.count-boundary (EachMode fixup)
+2020/03/12 16:24:30 [TRACE] vertex "provider.aws (close)": evaluating
+2020/03/12 16:24:30 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2020/03/12 16:24:30 [TRACE] [walkPlan] Entering eval tree: provider.aws (close)
+2020/03/12 16:24:30 [TRACE] <root>: eval: *terraform.EvalCloseProvider
+2020/03/12 16:24:30 [TRACE] GRPCProvider: Close
+2020-03-12T16:24:31.003+0900 [DEBUG] plugin: plugin process exited: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4 pid=68913
+2020-03-12T16:24:31.003+0900 [DEBUG] plugin: plugin exited
+2020/03/12 16:24:31 [TRACE] [walkPlan] Exiting eval tree: provider.aws (close)
+2020/03/12 16:24:31 [TRACE] vertex "provider.aws (close)": visit complete
+2020/03/12 16:24:31 [TRACE] dag/walk: visiting "root"
+2020/03/12 16:24:31 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2020/03/12 16:24:31 [TRACE] vertex "root": visit complete
+2020/03/12 16:24:31 [INFO] backend/local: apply calling Apply
+2020/03/12 16:24:31 [INFO] terraform: building graph: GraphTypeApply
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/03/12 16:24:31 [TRACE] ConfigTransformer: Starting for path: 
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+  ------
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.DiffTransformer
+2020/03/12 16:24:31 [TRACE] DiffTransformer starting
+2020/03/12 16:24:31 [TRACE] DiffTransformer: found Create change for aws_route53_zone.zone 
+2020/03/12 16:24:31 [TRACE] DiffTransformer: aws_route53_zone.zone will be represented by aws_route53_zone.zone
+2020/03/12 16:24:31 [TRACE] DiffTransformer complete
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.DiffTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+    aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+  aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+  ------
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.OrphanResourceTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.OrphanResourceTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/03/12 16:24:31 [TRACE] AttachResourceConfigTransformer: attaching to "aws_route53_zone.zone (prepare state)" (*terraform.NodeApplyableResource) config from route53.tf:7,1-35
+2020/03/12 16:24:31 [TRACE] AttachResourceConfigTransformer: attaching to "aws_route53_zone.zone" (*terraform.NodeApplyableResourceInstance) config from route53.tf:7,1-35
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/03/12 16:24:31 [DEBUG] Resource state not found for node "aws_route53_zone.zone", instance aws_route53_zone.zone
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+    aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+  aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/03/12 16:24:31 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/03/12 16:24:31 [TRACE] ProviderConfigTransformer: attaching to "provider.aws" provider configuration from provider.tf:1,1-15
+2020/03/12 16:24:31 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+    aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+  aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+  provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:31 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/03/12 16:24:31 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/03/12 16:24:31 [TRACE] ProviderTransformer: aws_route53_zone.zone (prepare state) is provided by provider.aws or inherited equivalent
+2020/03/12 16:24:31 [TRACE] ProviderTransformer: aws_route53_zone.zone is provided by provider.aws or inherited equivalent
+2020/03/12 16:24:31 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_route53_zone.zone (prepare state)
+2020/03/12 16:24:31 [DEBUG] ProviderTransformer: "aws_route53_zone.zone (prepare state)" (*terraform.NodeApplyableResource) needs provider.aws
+2020/03/12 16:24:31 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_route53_zone.zone
+2020/03/12 16:24:31 [DEBUG] ProviderTransformer: "aws_route53_zone.zone" (*terraform.NodeApplyableResourceInstance) needs provider.aws
+2020/03/12 16:24:31 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+    aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:31 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/03/12 16:24:31 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/03/12 16:24:31 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+    aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/03/12 16:24:31 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_route53_zone.zone (prepare state)
+2020/03/12 16:24:31 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_route53_zone.zone
+2020/03/12 16:24:31 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.aws
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/03/12 16:24:31 [DEBUG] ReferenceTransformer: "aws_route53_zone.zone (prepare state)" references: []
+2020/03/12 16:24:31 [DEBUG] ReferenceTransformer: "aws_route53_zone.zone" references: []
+2020/03/12 16:24:31 [DEBUG] ReferenceTransformer: "var.dns_config" references: []
+2020/03/12 16:24:31 [DEBUG] ReferenceTransformer: "provider.aws" references: []
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2020/03/12 16:24:31 [TRACE] AttachDependenciesTransformer: aws_route53_zone.zone depends on []
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.CBDEdgeTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.CBDEdgeTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.PruneUnusedValuesTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.PruneUnusedValuesTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+    aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+    aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+    var.dns_config - *terraform.NodeRootVariable
+  provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+    aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+    aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+    var.dns_config - *terraform.NodeRootVariable
+  provider.aws - *terraform.NodeApplyableProvider
+  provider.aws (close) - *terraform.graphNodeCloseProvider
+    aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+    aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer (no changes)
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+    aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+    aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+    var.dns_config - *terraform.NodeRootVariable
+  provider.aws - *terraform.NodeApplyableProvider
+  provider.aws (close) - *terraform.graphNodeCloseProvider
+    aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+    aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.aws (close) - *terraform.graphNodeCloseProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:31 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/03/12 16:24:31 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+    aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+  aws_route53_zone.zone (prepare state) - *terraform.NodeApplyableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+    var.dns_config - *terraform.NodeRootVariable
+  provider.aws - *terraform.NodeApplyableProvider
+  provider.aws (close) - *terraform.graphNodeCloseProvider
+    aws_route53_zone.zone - *terraform.NodeApplyableResourceInstance
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.aws (close) - *terraform.graphNodeCloseProvider
+  var.dns_config - *terraform.NodeRootVariable
+  ------
+2020/03/12 16:24:31 [DEBUG] Starting graph walk: walkApply
+2020/03/12 16:24:31 [TRACE] dag/walk: updating graph
+2020/03/12 16:24:31 [TRACE] dag/walk: added new vertex: "aws_route53_zone.zone (prepare state)"
+2020/03/12 16:24:31 [TRACE] dag/walk: added new vertex: "aws_route53_zone.zone"
+2020/03/12 16:24:31 [TRACE] dag/walk: added new vertex: "var.dns_config"
+2020/03/12 16:24:31 [TRACE] dag/walk: added new vertex: "provider.aws"
+2020/03/12 16:24:31 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2020/03/12 16:24:31 [TRACE] dag/walk: added new vertex: "provider.aws (close)"
+2020/03/12 16:24:31 [TRACE] dag/walk: added new vertex: "root"
+2020/03/12 16:24:31 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "var.dns_config"
+2020/03/12 16:24:31 [TRACE] dag/walk: added edge: "provider.aws (close)" waiting on "aws_route53_zone.zone"
+2020/03/12 16:24:31 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2020/03/12 16:24:31 [TRACE] dag/walk: added edge: "root" waiting on "provider.aws (close)"
+2020/03/12 16:24:31 [TRACE] dag/walk: added edge: "aws_route53_zone.zone" waiting on "aws_route53_zone.zone (prepare state)"
+2020/03/12 16:24:31 [TRACE] dag/walk: added edge: "aws_route53_zone.zone (prepare state)" waiting on "provider.aws"
+2020/03/12 16:24:31 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "aws_route53_zone.zone"
+2020/03/12 16:24:31 [TRACE] dag/walk: dependencies changed for "aws_route53_zone.zone", sending new deps
+2020/03/12 16:24:31 [TRACE] dag/walk: dependencies changed for "aws_route53_zone.zone (prepare state)", sending new deps
+2020/03/12 16:24:31 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2020/03/12 16:24:31 [TRACE] dag/walk: dependencies changed for "provider.aws (close)", sending new deps
+2020/03/12 16:24:31 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2020/03/12 16:24:31 [TRACE] dag/walk: visiting "var.dns_config"
+2020/03/12 16:24:31 [TRACE] vertex "var.dns_config": starting visit (*terraform.NodeRootVariable)
+2020/03/12 16:24:31 [TRACE] vertex "var.dns_config": evaluating
+2020/03/12 16:24:31 [TRACE] dag/walk: visiting "provider.aws"
+2020/03/12 16:24:31 [TRACE] [walkApply] Entering eval tree: var.dns_config
+2020/03/12 16:24:31 [TRACE] vertex "provider.aws": starting visit (*terraform.NodeApplyableProvider)
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/03/12 16:24:31 [TRACE] [walkApply] Exiting eval tree: var.dns_config
+2020/03/12 16:24:31 [TRACE] vertex "provider.aws": evaluating
+2020/03/12 16:24:31 [TRACE] vertex "var.dns_config": visit complete
+2020/03/12 16:24:31 [TRACE] [walkApply] Entering eval tree: provider.aws
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020-03-12T16:24:31.006+0900 [INFO]  plugin: configuring client automatic mTLS
+2020-03-12T16:24:31.034+0900 [DEBUG] plugin: starting plugin: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4 args=[/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4]
+2020-03-12T16:24:31.049+0900 [DEBUG] plugin: plugin started: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4 pid=68922
+2020-03-12T16:24:31.049+0900 [DEBUG] plugin: waiting for RPC address: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4
+2020-03-12T16:24:31.072+0900 [INFO]  plugin.terraform-provider-aws_v2.52.0_x4: configuring server automatic mTLS: timestamp=2020-03-12T16:24:31.071+0900
+2020-03-12T16:24:31.103+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: plugin address: address=/var/folders/8f/j9q8k6410375hwnjpc0671qm0000gn/T/plugin183469553 network=unix timestamp=2020-03-12T16:24:31.103+0900
+2020-03-12T16:24:31.104+0900 [DEBUG] plugin: using plugin: version=5
+2020/03/12 16:24:31 [TRACE] BuiltinEvalContext: Initialized "aws" provider for provider.aws
+2020/03/12 16:24:31 [TRACE] <root>: eval: terraform.EvalNoop
+2020/03/12 16:24:31 [TRACE] <root>: eval: terraform.EvalNoop
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalConfigProvider
+2020/03/12 16:24:31 [TRACE] buildProviderConfig for provider.aws: using explicit config only
+2020/03/12 16:24:31 [TRACE] GRPCProvider: GetSchema
+2020/03/12 16:24:31 [TRACE] GRPCProvider: Configure
+2020-03-12T16:24:31.222+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:31 [INFO] No assume_role block read from configuration
+2020-03-12T16:24:31.228+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:31 [INFO] Building AWS auth structure
+2020-03-12T16:24:31.228+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:31 [WARN] Invalid log level: "1". Defaulting to level: TRACE. Valid levels are: [TRACE DEBUG INFO WARN ERROR]
+2020-03-12T16:24:31.228+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:31 [INFO] Setting AWS metadata API timeout to 100ms
+2020-03-12T16:24:31.228+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:31 [INFO] AWS Auth provider used: "StaticProvider"
+2020-03-12T16:24:31.229+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:31 [WARN] AWS account ID not found for provider. See https://www.terraform.io/docs/providers/aws/index.html#skip_requesting_account_id for implications.
+2020-03-12T16:24:31.231+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:31 [DEBUG] [aws-sdk-go] DEBUG: Request ec2/DescribeAccountAttributes Details:
+2020-03-12T16:24:31.231+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
+2020-03-12T16:24:31.231+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: POST / HTTP/1.1
+2020-03-12T16:24:31.231+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Host: localhost:4597
+2020-03-12T16:24:31.231+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: User-Agent: aws-sdk-go/1.29.18 (go1.13.7; darwin; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.23 (+https://www.terraform.io)
+2020-03-12T16:24:31.231+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Content-Length: 87
+2020-03-12T16:24:31.231+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=mock_access_key/20200312/ap-northeast-1/ec2/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date, Signature=7ab5187dc6c497e4c35057442fa716543ea7a8d62973e710beafd2a5ac9d6483
+2020-03-12T16:24:31.231+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Content-Type: application/x-www-form-urlencoded; charset=utf-8
+2020-03-12T16:24:31.231+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: X-Amz-Date: 20200312T072431Z
+2020-03-12T16:24:31.231+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Accept-Encoding: gzip
+2020-03-12T16:24:31.231+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 
+2020-03-12T16:24:31.231+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Action=DescribeAccountAttributes&AttributeName.1=supported-platforms&Version=2016-11-15
+2020-03-12T16:24:31.231+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: -----------------------------------------------------
+2020-03-12T16:24:31.248+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:31 [DEBUG] [aws-sdk-go] DEBUG: Response ec2/DescribeAccountAttributes Details:
+2020-03-12T16:24:31.248+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: ---[ RESPONSE ]--------------------------------------
+2020-03-12T16:24:31.248+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: HTTP/1.1 200 OK
+2020-03-12T16:24:31.248+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Content-Length: 1170
+2020-03-12T16:24:31.248+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Access-Control-Allow-Headers: authorization,content-type,content-md5,cache-control,x-amz-content-sha256,x-amz-date,x-amz-security-token,x-amz-user-agent,x-amz-target,x-amz-acl,x-amz-version-id,x-localstack-target,x-amz-tagging
+2020-03-12T16:24:31.248+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Access-Control-Allow-Methods: HEAD,GET,PUT,POST,DELETE,OPTIONS,PATCH
+2020-03-12T16:24:31.248+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Access-Control-Allow-Origin: *
+2020-03-12T16:24:31.248+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Access-Control-Expose-Headers: x-amz-version-id
+2020-03-12T16:24:31.248+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Content-Type: text/html; charset=utf-8
+2020-03-12T16:24:31.248+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Date: Thu, 12 Mar 2020 07:24:31 GMT
+2020-03-12T16:24:31.248+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Server: BaseHTTP/0.6 Python/3.8.2
+2020-03-12T16:24:31.248+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 
+2020-03-12T16:24:31.248+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 
+2020-03-12T16:24:31.248+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: -----------------------------------------------------
+2020-03-12T16:24:31.248+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:31 [DEBUG] [aws-sdk-go] <DescribeAccountAttributesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/"><requestId>7a62c49f-347e-4fc4-9331-6e8eEXAMPLE</requestId><accountAttributeSet><item><attributeName>vpc-max-security-groups-per-interface</attributeName><attributeValueSet><item><attributeValue>5</attributeValue></item></attributeValueSet></item><item><attributeName>max-instances</attributeName><attributeValueSet><item><attributeValue>20</attributeValue></item></attributeValueSet></item><item><attributeName>supported-platforms</attributeName><attributeValueSet><item><attributeValue>EC2</attributeValue></item><item><attributeValue>VPC</attributeValue></item></attributeValueSet></item><item><attributeName>default-vpc</attributeName><attributeValueSet><item><attributeValue>none</attributeValue></item></attributeValueSet></item><item><attributeName>max-elastic-ips</attributeName><attributeValueSet><item><attributeValue>5</attributeValue></item></attributeValueSet></item><item><attributeName>vpc-max-elastic-ips</attributeName><attributeValueSet><item><attributeValue>5</attributeValue></item></attributeValueSet></item></accountAttributeSet></DescribeAccountAttributesResponse>
+2020/03/12 16:24:31 [TRACE] [walkApply] Exiting eval tree: provider.aws
+2020/03/12 16:24:31 [TRACE] vertex "provider.aws": visit complete
+2020/03/12 16:24:31 [TRACE] dag/walk: visiting "aws_route53_zone.zone (prepare state)"
+2020/03/12 16:24:31 [TRACE] vertex "aws_route53_zone.zone (prepare state)": starting visit (*terraform.NodeApplyableResource)
+2020/03/12 16:24:31 [TRACE] vertex "aws_route53_zone.zone (prepare state)": evaluating
+2020/03/12 16:24:31 [TRACE] [walkApply] Entering eval tree: aws_route53_zone.zone (prepare state)
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalWriteResourceState
+2020/03/12 16:24:31 [TRACE] [walkApply] Exiting eval tree: aws_route53_zone.zone (prepare state)
+2020/03/12 16:24:31 [TRACE] vertex "aws_route53_zone.zone (prepare state)": visit complete
+2020/03/12 16:24:31 [TRACE] dag/walk: visiting "aws_route53_zone.zone"
+2020/03/12 16:24:31 [TRACE] vertex "aws_route53_zone.zone": starting visit (*terraform.NodeApplyableResourceInstance)
+2020/03/12 16:24:31 [TRACE] vertex "aws_route53_zone.zone": evaluating
+2020/03/12 16:24:31 [TRACE] [walkApply] Entering eval tree: aws_route53_zone.zone
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalReadDiff
+2020/03/12 16:24:31 [TRACE] EvalReadDiff: Read Create change from plan for aws_route53_zone.zone
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalIf
+2020/03/12 16:24:31 [TRACE] <root>: eval: terraform.EvalNoop
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalIf
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalReadState
+2020/03/12 16:24:31 [TRACE] EvalReadState: reading state for aws_route53_zone.zone
+2020/03/12 16:24:31 [TRACE] EvalReadState: no state present for aws_route53_zone.zone
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalReadDiff
+2020/03/12 16:24:31 [TRACE] EvalReadDiff: Read Create change from plan for aws_route53_zone.zone
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalDiff
+2020/03/12 16:24:31 [TRACE] Re-validating config for "aws_route53_zone.zone"
+2020/03/12 16:24:31 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2020/03/12 16:24:31 [TRACE] GRPCProvider: PlanResourceChange
+2020/03/12 16:24:31 [WARN] Provider "registry.terraform.io/-/aws" produced an invalid plan for aws_route53_zone.zone, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_destroy: planned value cty.False does not match config value cty.NullVal(cty.Bool)
+      - .comment: planned value cty.StringVal("Managed by Terraform") does not match config value cty.NullVal(cty.String)
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalCheckPlannedChange
+2020/03/12 16:24:31 [TRACE] EvalCheckPlannedChange: Verifying that actual change (action Create) matches planned change (action Create)
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalReadState
+2020/03/12 16:24:31 [TRACE] EvalReadState: reading state for aws_route53_zone.zone
+2020/03/12 16:24:31 [TRACE] EvalReadState: no state present for aws_route53_zone.zone
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalReduceDiff
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalIf
+2020/03/12 16:24:31 [TRACE] <root>: eval: terraform.EvalNoop
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalApplyPre
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalApply
+2020/03/12 16:24:31 [DEBUG] aws_route53_zone.zone: applying the planned Create change
+2020/03/12 16:24:31 [TRACE] GRPCProvider: ApplyResourceChange
+2020-03-12T16:24:31.251+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:31 [DEBUG] setting computed for "name_servers" from ComputedKeys
+2020-03-12T16:24:31.251+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:31 [DEBUG] Creating Route53 hosted zone: {
+2020-03-12T16:24:31.251+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:   CallerReference: "terraform-20200312072431251700000001",
+2020-03-12T16:24:31.251+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:   HostedZoneConfig: {
+2020-03-12T16:24:31.251+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:     Comment: "Managed by Terraform"
+2020-03-12T16:24:31.251+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:   },
+2020-03-12T16:24:31.251+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:   Name: "ciccio.com."
+2020-03-12T16:24:31.251+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: }
+2020-03-12T16:24:31.252+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:31 [DEBUG] [aws-sdk-go] DEBUG: Request route53/CreateHostedZone Details:
+2020-03-12T16:24:31.252+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
+2020-03-12T16:24:31.252+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: POST /2013-04-01/hostedzone HTTP/1.1
+2020-03-12T16:24:31.252+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Host: localhost:4580
+2020-03-12T16:24:31.252+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: User-Agent: aws-sdk-go/1.29.18 (go1.13.7; darwin; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.23 (+https://www.terraform.io)
+2020-03-12T16:24:31.252+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Content-Length: 276
+2020-03-12T16:24:31.252+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=mock_access_key/20200312/us-east-1/route53/aws4_request, SignedHeaders=content-length;host;x-amz-date, Signature=f5c2937f1d7fc7959c3b46ca5f596c57f7731fd20694911e4ddefd7e784a6779
+2020-03-12T16:24:31.252+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: X-Amz-Date: 20200312T072431Z
+2020-03-12T16:24:31.252+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Accept-Encoding: gzip
+2020-03-12T16:24:31.252+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 
+2020-03-12T16:24:31.252+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: <CreateHostedZoneRequest xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><CallerReference>terraform-20200312072431251700000001</CallerReference><HostedZoneConfig><Comment>Managed by Terraform</Comment></HostedZoneConfig><Name>ciccio.com.</Name></CreateHostedZoneRequest>
+2020-03-12T16:24:31.252+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: -----------------------------------------------------
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:31 [DEBUG] [aws-sdk-go] DEBUG: Response route53/CreateHostedZone Details:
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: ---[ RESPONSE ]--------------------------------------
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: HTTP/1.0 201 CREATED
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Connection: close
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Content-Length: 542
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Access-Control-Allow-Origin: *
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Content-Type: text/html; charset=utf-8
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Date: Thu, 12 Mar 2020 07:24:31 GMT
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: Server: Werkzeug/1.0.0 Python/3.8.2
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: -----------------------------------------------------
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 2020/03/12 16:24:31 [DEBUG] [aws-sdk-go] <CreateHostedZoneResponse xmlns="https://route53.amazonaws.com/doc/2012-12-12/">
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:    <HostedZone>
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:       <Id>/hostedzone/NL4IZJ1ADS99MAH</Id>
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:       <Name>ciccio.com.</Name>
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:       <ResourceRecordSetCount>0</ResourceRecordSetCount>
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:       <Config>
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:         
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:             <Comment>Managed by Terraform</Comment>
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:         
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:         <PrivateZone>False</PrivateZone>
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:       </Config>
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:    </HostedZone>
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:    <DelegationSet>
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:       <NameServers>
+2020-03-12T16:24:31.276+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:          <NameServer>moto.test.com</NameServer>
+2020-03-12T16:24:31.277+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:       </NameServers>
+2020-03-12T16:24:31.277+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4:    </DelegationSet>
+2020-03-12T16:24:31.277+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: </CreateHostedZoneResponse>
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: panic: runtime error: invalid memory address or nil pointer dereference
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: [signal SIGSEGV: segmentation violation code=0x1 addr=0x8 pc=0x4bd32d2]
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: goroutine 73 [running]:
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: github.com/terraform-providers/terraform-provider-aws/aws.resourceAwsRoute53ZoneCreate(0xc000165340, 0x51fa760, 0xc0002f9900, 0x2, 0xa26cd60)
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-aws/aws/resource_aws_route53_zone.go:145 +0x4e2
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: github.com/hashicorp/terraform-plugin-sdk/helper/schema.(*Resource).Apply(0xc00069ec80, 0xc000155360, 0xc000c8fb40, 0x51fa760, 0xc0002f9900, 0xc000519d01, 0xc000b48870, 0xc000519df0)
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-aws/vendor/github.com/hashicorp/terraform-plugin-sdk/helper/schema/resource.go:305 +0x365
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: github.com/hashicorp/terraform-plugin-sdk/helper/schema.(*Provider).Apply(0xc0007cec00, 0xc000ce5918, 0xc000155360, 0xc000c8fb40, 0xc0000d8e08, 0xc00013a148, 0x57f8860)
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-aws/vendor/github.com/hashicorp/terraform-plugin-sdk/helper/schema/provider.go:294 +0x99
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: github.com/hashicorp/terraform-plugin-sdk/internal/helper/plugin.(*GRPCProviderServer).ApplyResourceChange(0xc00056ea28, 0x6e58080, 0xc000a49890, 0xc000b40300, 0xc00056ea28, 0xc000a49890, 0xc0009b5a80)
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-aws/vendor/github.com/hashicorp/terraform-plugin-sdk/internal/helper/plugin/grpc_provider.go:885 +0x8b4
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: github.com/hashicorp/terraform-plugin-sdk/internal/tfplugin5._Provider_ApplyResourceChange_Handler(0x635f2e0, 0xc00056ea28, 0x6e58080, 0xc000a49890, 0xc000b402a0, 0x0, 0x6e58080, 0xc000a49890, 0xc0004b0160, 0x145)
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-aws/vendor/github.com/hashicorp/terraform-plugin-sdk/internal/tfplugin5/tfplugin5.pb.go:3189 +0x217
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: google.golang.org/grpc.(*Server).processUnaryRPC(0xc0003de000, 0x6e78cc0, 0xc0001ef980, 0xc000ae1500, 0xc0005124b0, 0xa240100, 0x0, 0x0, 0x0)
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-aws/vendor/google.golang.org/grpc/server.go:995 +0x460
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: google.golang.org/grpc.(*Server).handleStream(0xc0003de000, 0x6e78cc0, 0xc0001ef980, 0xc000ae1500, 0x0)
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-aws/vendor/google.golang.org/grpc/server.go:1275 +0xd97
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: google.golang.org/grpc.(*Server).serveStreams.func1.1(0xc0001405c0, 0xc0003de000, 0x6e78cc0, 0xc0001ef980, 0xc000ae1500)
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-aws/vendor/google.golang.org/grpc/server.go:710 +0xbb
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: created by google.golang.org/grpc.(*Server).serveStreams.func1
+2020-03-12T16:24:31.279+0900 [DEBUG] plugin.terraform-provider-aws_v2.52.0_x4: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-aws/vendor/google.golang.org/grpc/server.go:708 +0xa1
+2020/03/12 16:24:31 [DEBUG] aws_route53_zone.zone: apply errored, but we're indicating that via the Error pointer rather than returning it: rpc error: code = Unavailable desc = transport is closing
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalMaybeTainted
+2020/03/12 16:24:31 [TRACE] EvalMaybeTainted: aws_route53_zone.zone encountered an error during creation, so it is now marked as tainted
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalWriteState
+2020/03/12 16:24:31 [TRACE] EvalWriteState: removing state object for aws_route53_zone.zone
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalApplyProvisioners
+2020/03/12 16:24:31 [TRACE] EvalApplyProvisioners: aws_route53_zone.zone has no state, so skipping provisioners
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalMaybeTainted
+2020/03/12 16:24:31 [TRACE] EvalMaybeTainted: aws_route53_zone.zone encountered an error during creation, so it is now marked as tainted
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalWriteState
+2020/03/12 16:24:31 [TRACE] EvalWriteState: removing state object for aws_route53_zone.zone
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalIf
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalIf
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalWriteDiff
+2020/03/12 16:24:31 [TRACE] <root>: eval: *terraform.EvalApplyPost
+2020/03/12 16:24:31 [ERROR] <root>: eval: *terraform.EvalApplyPost, err: rpc error: code = Unavailable desc = transport is closing
+2020/03/12 16:24:31 [ERROR] <root>: eval: *terraform.EvalSequence, err: rpc error: code = Unavailable desc = transport is closing
+2020/03/12 16:24:31 [TRACE] [walkApply] Exiting eval tree: aws_route53_zone.zone
+2020/03/12 16:24:31 [TRACE] vertex "aws_route53_zone.zone": visit complete
+2020/03/12 16:24:31 [TRACE] dag/walk: upstream of "provider.aws (close)" errored, so skipping
+2020/03/12 16:24:31 [TRACE] dag/walk: upstream of "meta.count-boundary (EachMode fixup)" errored, so skipping
+2020/03/12 16:24:31 [TRACE] dag/walk: upstream of "root" errored, so skipping
+2020/03/12 16:24:31 [TRACE] statemgr.Filesystem: reading latest snapshot from ./terraform.tfstate
+2020/03/12 16:24:31 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2020/03/12 16:24:31 [TRACE] statemgr.Filesystem: read nil snapshot
+2020/03/12 16:24:31 [TRACE] statemgr.Filesystem: no original state snapshot to back up
+2020/03/12 16:24:31 [TRACE] statemgr.Filesystem: state has changed since last snapshot, so incrementing serial to 1
+2020/03/12 16:24:31 [TRACE] statemgr.Filesystem: writing snapshot at ./terraform.tfstate
+2020-03-12T16:24:31.282+0900 [DEBUG] plugin: plugin process exited: path=/Users/giulianozorzi/repos/pro/pro_aws_ui/tests/localstack/00/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.52.0_x4 pid=68922 error="exit status 2"
+2020/03/12 16:24:31 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2020/03/12 16:24:31 [TRACE] statemgr.Filesystem: unlocking ./terraform.tfstate using fcntl flock
+2020-03-12T16:24:31.294+0900 [DEBUG] plugin: plugin exited

@@ -1,0 +1,1 @@
+dns_config = [ "fake1.com", "fake2.com" ]
